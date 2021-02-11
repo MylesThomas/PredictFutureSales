@@ -1,0 +1,35 @@
+---
+title: "KagglePredictFutureSales"
+author: "Myles Thomas"
+date: "2/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Kaggle Data Science Competition - Predict Future Sales
+
+```{r load libraries, include=FALSE}
+library(tidyverse)
+
+```
+
+```{r read in data}
+items <- read.csv('items_en.csv')
+item_categories <- read.csv('item_categories.csv')
+shops <- read.csv('shops.csv')
+train <- read.csv('sales_train1.csv')
+test <- read.csv('test.csv')
+```
+
+
+```{r look at data, include=FALSE}
+items
+item_categories
+shops
+train
+test
+```
+
